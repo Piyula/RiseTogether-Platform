@@ -1,2 +1,24 @@
+version: "3"
 
+services:
+  mongodb:
+    image: mongo
+    container_name: rise-mongo
+    ports:
+      - "27017:27017"
 
+  auth:
+    build: ./auth
+    container_name: rise-auth
+    ports:
+      - "5001:5001"
+    depends_on:
+      - mongodb
+
+  gateway:
+    build: ./gateway
+    container_name: rise-gateway
+    ports:
+      - "5000:5000"
+    depends_on:
+      - auth
