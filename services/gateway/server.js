@@ -4,6 +4,7 @@ const cors = require("cors");
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 
 app.use("/api/auth", createProxyMiddleware({
   target: "http://auth:5001",

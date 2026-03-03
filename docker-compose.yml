@@ -8,7 +8,7 @@ services:
       - "27017:27017"
 
   auth:
-    build: ./auth
+    build: ./services/auth
     container_name: rise-auth
     ports:
       - "5001:5001"
@@ -16,7 +16,7 @@ services:
       - mongodb
 
   gateway:
-    build: ./gateway
+    build: ./services/gateway
     container_name: rise-gateway
     ports:
       - "5000:5000"
