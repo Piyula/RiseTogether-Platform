@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+
+  auth:
+    build: ./services/auth
+    ports:
+      - "5001:5001"
+    depends_on:
+      - mongodb
+
+  gateway:
+    build: ./gateway
+    ports:
+      - "5000:5000"
+    depends_on:
+      - auth
