@@ -1,10 +1,22 @@
 # RiseTogether Platform
 
-RiseTogether is a microservices-based platform scaffold designed to support social-impact workflows across authentication, beneficiaries, schools, jobs, sponsors, chat, and a web frontend.
+RiseTogether Platform is an impact-oriented system designed to connect and support key stakeholders such as beneficiaries, schools, sponsors, and job opportunities.
 
-This repository currently contains the project structure and branch strategy, with service implementation to be added incrementally.
+This repository currently contains the **frontend application** (React) and serves as the foundation for a planned microservices backend architecture.
 
-## Project Structure
+## Current Status
+
+- ✅ Frontend application is available under `frontend/`
+- 🚧 Backend services (`auth`, `gateway`, domain services) are planned and will be added incrementally
+
+## Tech Stack (Current)
+
+- **Frontend:** React (Create React App)
+- **Routing:** React Router
+- **HTTP Client:** Axios
+- **Testing:** React Testing Library + Jest
+
+## Repository Structure
 
 ```text
 .
@@ -44,146 +56,86 @@ This repository currently contains the project structure and branch strategy, wi
 		└── server.js
 ```
 
-## Architecture (Target)
-
-- `frontend` → user-facing web app
-- `gateway` → API gateway / routing layer
-- `services/auth` → authentication and authorization
-- `services/beneficiary` → beneficiary management
-- `services/school` (planned) → school domain APIs
-- `services/job` (planned) → jobs and opportunities APIs
-- `services/sponsor` (planned) → sponsor management APIs
-- `services/chat` (planned) → chat / messaging APIs
-- `config` → environment-wise configuration
-- `docker` → containerization and nginx reverse proxy setup
-
-## Branching Strategy
-
-### Main branches
-
-- `main` → production-ready code
-- `develop` → integration branch for active development
-
-### Feature branches
-
-- `feature/auth-service`
-- `feature/beneficiary-service`
-- `feature/school-service`
-- `feature/job-service`
-- `feature/sponsor-service`
-- `feature/chat-service`
-- `feature/frontend-auth`
-- `feature/frontend-dashboard`
-
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ (recommended)
-- npm 9+ (or compatible)
-- Docker Desktop (optional, for containerized run)
+- Node.js 18+
+- npm 9+
 - Git
 
-### 1) Clone repository
+### 1) Clone the Repository
 
 ```bash
 git clone https://github.com/Piyula/RiseTogether-Platform
 cd RiseTogether-Platform
 ```
 
-### 2) Checkout development branch
+### 2) Install Frontend Dependencies
 
 ```bash
-git checkout develop
+cd frontend
+npm install
 ```
 
-### 3) Install dependencies
-
-Install dependencies in each Node.js module once `package.json` scripts/deps are defined.
+### 3) Run the Frontend
 
 ```bash
-cd frontend && npm install
-cd ../gateway && npm install
-cd ../services/auth && npm install
-cd ../beneficiary && npm install
-```
-
-You can repeat this pattern for additional service folders as they are added.
-
-### 4) Run services locally
-
-Use the run script you define in each `package.json`, typically one of:
-
-```bash
-npm run dev
-# or
 npm start
 ```
 
-## Docker (Planned Workflow)
+The app runs at: `http://localhost:3000`
 
-When Docker files and compose definitions are completed, run:
+## Frontend Scripts
 
-```bash
-docker compose up --build
-```
+From the `frontend/` directory:
 
-or if using the nested compose file:
+- `npm start` - Run development server
+- `npm test` - Run tests
+- `npm run build` - Create production build
+- `npm run eject` - Eject CRA configuration (irreversible)
 
-```bash
-docker compose -f docker/docker-compose.yml up --build
-```
+## Planned Target Architecture
 
-## Configuration
+The platform is intended to evolve into a microservices architecture with the following components:
 
-Configuration files are located in `config/`:
+- `gateway` - API gateway and request routing
+- `services/auth` - authentication and authorization
+- `services/beneficiary` - beneficiary domain management
+- `services/school` - school domain APIs
+- `services/job` - jobs/opportunities APIs
+- `services/sponsor` - sponsor domain APIs
+- `services/chat` - messaging and communication
 
-- `default.json` → base shared settings
-- `dev.json` → local development overrides
-- `prod.json` → production overrides
+## Branching Strategy
 
-Recommended approach:
-
-- Keep secrets out of git
-- Use environment variables for credentials and tokens
-- Use `default.json` only for non-sensitive defaults
-
-## API Documentation
-
-Add and maintain endpoint contracts in:
-
-- `docs/API-endpoints.md`
-
-Suggested format per endpoint:
-
-- Method + Route
-- Request body / params / headers
-- Success response example
-- Error responses
-- Authentication requirements
-
-## Suggested Next Steps
-
-1. Define each service's `package.json` scripts (`dev`, `start`, `test`).
-2. Implement `server.js` entrypoints and health endpoints.
-3. Fill `docs/API-endpoints.md` with initial API contracts.
-4. Complete Dockerfiles and compose networking.
-5. Add `.env.example` files for gateway and services.
+- `main` - stable/production branch
+- `develop` - integration branch for ongoing development
+- `feature/*` - task-specific feature branches
 
 ## Contribution Workflow
 
-1. Create feature branch from `develop`.
-2. Commit with clear messages.
-3. Push branch and open PR to `develop`.
-4. Merge `develop` to `main` for releases.
+1. Branch from `develop`
+2. Implement your changes
+3. Commit with clear messages
+4. Push branch and open a pull request to `develop`
 
 Example:
 
 ```bash
 git checkout develop
 git pull origin develop
-git checkout -b feature/auth-service
+git checkout -b feature/frontend-auth
 ```
 
+## Roadmap
 
+1. Add `gateway` and `auth` services
+2. Define API contracts and shared configuration
+3. Add domain services (`beneficiary`, `school`, `job`, `sponsor`, `chat`)
+4. Introduce Docker-based local orchestration
+5. Add CI/CD and environment-specific deployment
 
+## License
+
+Add your license information here (for example: MIT).
