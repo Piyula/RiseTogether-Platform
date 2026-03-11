@@ -1,15 +1,18 @@
 const express = require("express");
-const { createProxyMiddleware } = require("http-proxy-middleware");
+const { createProxyMiddleware, fixRequestBody } = require("http-proxy-middleware");
 const cors = require("cors");
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 
 app.use("/api/auth", createProxyMiddleware({
   target: "http://auth:5001",
   changeOrigin: true,
-  // Express strips the mount path, so add /api/auth back before forwarding.
-  pathRewrite: (path) => `/api/auth${path}`
+  pathRewrite: (path) => `/api/auth${path}`,
+  on: {
+    proxyReq: fixRequestBody
+  }
 }));
 
 app.listen(5000, () => {
