@@ -10,6 +10,8 @@ services:
     build: ./services/auth
     ports:
       - "5001:5001"
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/risetogether
     depends_on:
       - mongodb
 
