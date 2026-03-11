@@ -21,6 +21,15 @@
   border: 1px solid #ccc;
 }
 
+.form-container select {
+  width: 96%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
 .form-container button {
   width: 95%;
   padding: 10px;
