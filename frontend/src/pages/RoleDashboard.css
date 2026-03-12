@@ -1,0 +1,161 @@
+.role-dashboard {
+  --role-primary: #0d6f6d;
+  --role-accent: #f0f7f7;
+  --role-text: #143434;
+  --role-surface: #ffffff;
+  --role-border: #dbe8e8;
+  min-height: calc(100vh - 92px);
+  padding: 32px 20px 40px;
+  background:
+    radial-gradient(circle at 20% 0%, #eff9f9 0%, #e7f2f2 30%, #f4f8f8 60%, #f8fbfb 100%);
+  color: var(--role-text);
+}
+
+.role-dashboard__inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+}
+
+.role-dashboard__header {
+  background-color: var(--role-surface);
+  border: 1px solid var(--role-border);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(20, 52, 52, 0.08);
+}
+
+.role-dashboard__header h1 {
+  margin: 0;
+  font-size: 1.85rem;
+  color: var(--role-primary);
+}
+
+.role-dashboard__header p {
+  margin: 10px 0 0;
+  line-height: 1.5;
+}
+
+.role-dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.metric-card {
+  background-color: var(--role-surface);
+  border: 1px solid var(--role-border);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(20, 52, 52, 0.08);
+}
+
+.metric-card__label {
+  margin: 0;
+  color: #4f6f6f;
+  font-size: 0.88rem;
+}
+
+.metric-card__value {
+  margin: 8px 0 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.role-dashboard__sections {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 14px;
+}
+
+.dashboard-panel {
+  background-color: var(--role-surface);
+  border: 1px solid var(--role-border);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.dashboard-panel h2 {
+  margin: 0 0 12px;
+  color: var(--role-primary);
+  font-size: 1.1rem;
+}
+
+.dashboard-list {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.75;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.action-button {
+  border: 0;
+  border-radius: 9px;
+  padding: 10px 12px;
+  background-color: var(--role-primary);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  opacity: 0.9;
+}
+
+.role-dashboard[data-role="admin"] {
+  --role-primary: #084f8c;
+  --role-accent: #ebf4fb;
+  --role-text: #0f2f4b;
+  --role-border: #d7e5f1;
+}
+
+.role-dashboard[data-role="beneficiary"] {
+  --role-primary: #8a4b0f;
+  --role-accent: #fdf3e8;
+  --role-text: #4a2c0e;
+  --role-border: #f0dfcc;
+}
+
+.role-dashboard[data-role="school"] {
+  --role-primary: #145a32;
+  --role-accent: #edf8f1;
+  --role-text: #193525;
+  --role-border: #d7eadf;
+}
+
+.role-dashboard[data-role="sponsor"] {
+  --role-primary: #4e1d95;
+  --role-accent: #f5edff;
+  --role-text: #34185f;
+  --role-border: #e3d6f4;
+}
+
+@media (max-width: 960px) {
+  .role-dashboard__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .role-dashboard__sections {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .role-dashboard {
+    padding: 20px 12px 32px;
+  }
+
+  .role-dashboard__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-grid {
+    grid-template-columns: 1fr;
+  }
+}
