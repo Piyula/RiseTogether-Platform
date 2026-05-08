@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
+import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 
 import AdminDashboard from "./pages/admin/AdminDashboard";
@@ -20,7 +20,7 @@ return(
 
 <Routes>
 
-<Route path="/" element={<Dashboard/>}/>
+<Route path="/" element={<HomePage/>}/>
 
 <Route path="/login" element={<Login/>}/>
 <Route path="/register" element={<Register/>}/>
