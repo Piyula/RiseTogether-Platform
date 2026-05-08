@@ -3,13 +3,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #1e90ff;
+  background-color: #FF6D00;
   color: white;
 }
 
 .logo {
   font-size: 28px;
   font-weight: bold;
+
 }
 
 .nav-buttons .btn {
@@ -17,11 +18,14 @@
   padding: 8px 16px;
   text-decoration: none;
   color: white;
-  background-color: #ff7f50;
+  background-color: #135ba3;
   border-radius: 5px;
   font-weight: bold;
+  corner-block-end-shape:13px;
+  
+
 }
 
 .nav-buttons .btn:hover {
-  background-color: #ff4500;
+  background-color: #FF8F00;
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import "./Dashboard.css";
+import "./HomePage.css";
 
-function Dashboard() {
+function HomePage() {
   return (
     <div className="dashboard-container">
       <header className="dashboard-header">
@@ -85,4 +85,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default HomePage;
