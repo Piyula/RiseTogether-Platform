@@ -18,9 +18,9 @@ body {
 }
 
 .dashboard-header h3 {
-  color: #d94f4f;
+  color: #FF6D00;
   font-size: 0.9rem;
-  background: linear-gradient(135deg, #fff0f0, #ffe8e8);
+  background: linear-gradient(135deg, #fff8f0, #ffe8d6);
   display: inline-block;
   padding: 6px 20px;
   border-radius: 20px;
@@ -28,7 +28,7 @@ body {
   font-weight: 600;
   margin-bottom: 24px;
   text-transform: uppercase;
-  box-shadow: 0 4px 15px rgba(217, 79, 79, 0.15);
+  box-shadow: 0 4px 15px rgba(255, 109, 0, 0.15);
 }
 
 .dashboard-header h1 {
@@ -42,7 +42,7 @@ body {
   color: #222;
 }
 .dashboard-header .build {
-  color: #0044ff;
+  color: #FF6D00;
 }
 .dashboard-header p {
   font-size: 1.2rem;
@@ -90,14 +90,14 @@ body {
 .section-title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #1a365d;
+  color: #FF6D00;
   margin-bottom: 32px;
   text-align: left;
   line-height: 1.2;
   letter-spacing: -1px;
 }
 .section-subtitle {
-  color: #0044ff;
+  color: #FF6D00;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 10px;
@@ -126,7 +126,7 @@ body {
   box-shadow: 0 15px 40px rgba(0,0,0,0.12);
 }
 .card h3 {
-  color: #1a365d;
+  color: #FF6D00;
   font-size: 1.3rem;
   margin-bottom: 16px;
   font-weight: 700;
@@ -150,7 +150,7 @@ body {
   align-items: flex-start;
 }
 .impact-card .story-title {
-  color: #104e8b;
+  color: #FF6D00;
   font-weight: 600;
   margin-bottom: 6px;
 }
@@ -159,14 +159,25 @@ body {
   font-size: 1rem;
 }
 .mission-section {
-  background: linear-gradient(90deg, #1e293b 60%, #f8fafc 100%);
+ 
   color: #fff;
   border-radius: 24px;
   padding: 48px 32px;
-  margin: 60px 0;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-  position: relative;
+  margin: 80px 340px 10px;
+  background: linear-gradient( #FF6D00 80%, #f8fafc 80%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
+
+.mission-section div {
+ 
+  text-align: center;
+}
+
 .mission-section .mission-quote {
   background: rgba(255,255,255,0.12);
   color: #fff;

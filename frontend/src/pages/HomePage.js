@@ -48,7 +48,7 @@ const HomePage = () => {
       <section className="section">
         <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
           <h2 className="section-title">Leadership Team</h2>
-          <a href="#" style={{color:'#0044ff', fontWeight:600, textDecoration:'none'}}>View All Team &rarr;</a>
+          <a href="#" style={{color:'#FF6D00', fontWeight:600, textDecoration:'none'}}>View All Team &rarr;</a>
         </div>
         <div className="card-grid">
           <div className="card"><h3>Dr. Malini Silva</h3><p>Executive Director</p></div>
@@ -74,7 +74,7 @@ const HomePage = () => {
           <div className="card">
             <h3>Community Nodes</h3>
             <p>Physical hubs that instill inclusive values, offer digital education, financial collaboration, and local culture-building.</p>
-            <div style={{marginTop:8, color:'#d94f4f', fontWeight:600}}>12+ Active Districts</div>
+            <div style={{marginTop:8, color:'#FF6D00', fontWeight:600}}>12+ Active Districts</div>
           </div>
           <div className="card">
             <h3>Impact Driven</h3>
@@ -83,7 +83,7 @@ const HomePage = () => {
           <div className="card">
             <h3>Digital Literacy</h3>
             <p>Bridging the rural-urban divide by bringing online school tools to the doorsteps of those who need them most.</p>
-            <a href="#" style={{color:'#0044ff',fontWeight:600,fontSize:'0.95rem'}}>Learn more &rarr;</a>
+            <a href="#" style={{color:'#FF6D00',fontWeight:600,fontSize:'0.95rem'}}>Learn more &rarr;</a>
           </div>
         </div>
       </section>
