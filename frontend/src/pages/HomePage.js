@@ -215,22 +215,51 @@ const HomePage = () => {
       {/* Contact Section */}
       <section className="section contact-section">
         <div className="contact-info">
-          <span className="section-subtitle">CONNECT WITH US</span>
+          <span className="section-subtitle" style={{background:'#d6dae4', color:'black',}}>CONNECT WITH US</span>
           <h2 className="section-title" style={{fontSize:'1.5rem'}}>Let's build the future together</h2>
           <div style={{margin:'18px 0'}}>
-            <div><b>Our Office</b><br/>456 Unity Plaza, Colombo 03, Sri Lanka</div>
-            <div style={{marginTop:12}}><b>Email Us</b><br/>hello@risetogether.lk<br/>support@risetogether.lk</div>
-            <div style={{marginTop:12}}><b>Phone</b><br/>+94 12 345 5678<br/>Mon - Fri, 9am - 5pm</div>
+            <div className="contact-row">
+              <span className="contact-icon"><img src="/ico1.png" alt="Office" /></span>
+              <div className="contact-details">
+                <b>Our Office</b><br/>456 Unity Plaza, Colombo 03, Sri Lanka
+              </div>
+            </div>
+            <div className="contact-row">
+              <span className="contact-icon"><img src="/ico2.png" alt="Email" /></span>
+              <div className="contact-details">
+                <b>Email Us</b><br/>hello@risetogether.lk<br/>support@risetogether.lk
+              </div>
+            </div>
+            <div className="contact-row">
+              <span className="contact-icon"><img src="/ico3.png" alt="Phone" /></span>
+              <div className="contact-details">
+                <b>Phone</b><br/>+94 12 345 5678<br/>Mon - Fri, 9am - 5pm
+              </div>
+            </div>
           </div>
         </div>
-        <form className="contact-form">
-          <div style={{display:'flex',gap:16}}>
-            <input type="text" placeholder="Your full name" style={{flex:1,padding:10,borderRadius:8,border:'1px solid #e5e7eb',marginBottom:12}} />
-            <input type="email" placeholder="Your email address" style={{flex:1,padding:10,borderRadius:8,border:'1px solid #e5e7eb',marginBottom:12}} />
+        <form className="contact-form" style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 0,
+            background: '#fff',
+            borderRadius: 12,
+            boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
+            padding: 24,
+            marginTop: 24,
+            maxWidth: 500,
+            width: '100%',
+            alignItems: 'stretch',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+        }}>
+          <div style={{display:'flex', gap: 16, marginBottom: 12}}>
+            <input type="text" placeholder="Your full name" style={{flex:1, padding:10, borderRadius:8, border:'1px solid #e5e7eb'}} />
+            <input type="email" placeholder="Your email address" style={{flex:1, padding:10, borderRadius:8, border:'1px solid #e5e7eb'}} />
           </div>
-          <input type="text" placeholder="Subject" style={{width:'100%',padding:10,borderRadius:8,border:'1px solid #e5e7eb',marginBottom:12}} />
-          <textarea placeholder="How can we help?" style={{width:'100%',padding:10,borderRadius:8,border:'1px solid #e5e7eb',marginBottom:12,minHeight:60}} />
-          <button className="btn" type="submit" style={{width:'100%'}}>Send Message</button>
+          <input type="text" placeholder="Subject" style={{width:'100%', padding:10, borderRadius:8, border:'1px solid #e5e7eb', marginBottom:12}} />
+          <textarea placeholder="How can we help?" style={{width:'100%', padding:10, borderRadius:8, border:'1px solid #e5e7eb', marginBottom:20, minHeight:60}} />
+          <button className="btns" type="submit" style={{width:'100%', marginTop: 0, borderRadius:8, padding:12, fontWeight:600}}>Send Message</button>
         </form>
       </section>
 
@@ -238,14 +267,14 @@ const HomePage = () => {
       <section className="section" style={{textAlign:'center'}}>
         <h2 className="section-title" style={{color:'#222'}}>Ready to make an impact?</h2>
         <p>Join thousands of others building a more inclusive and prosperous future together.</p>
-        <button className="btn">Start Your Journey</button>
-        <button className="btn2" style={{marginLeft:12}}>Support Now</button>
+        <button className="btns">Start Your Journey</button>
+        <button className="btnss2" style={{marginLeft:12}}>Support Now</button>
       </section>
 
       {/* Footer */}
       <footer className="footer">
         <div>Rise Together</div>
-        <div style={{marginTop:8}}>&copy; 2024 Rise Together. Built for Collective Growth.</div>
+        <div style={{marginTop:8}}>&copy; 2026 Rise Together. Built for Collective Growth.</div>
         <div style={{marginTop:8}}>
           <a href="#" style={{color:'#888',marginRight:16}}>Privacy Policy</a>
           <a href="#" style={{color:'#888',marginRight:16}}>Terms of Service</a>
