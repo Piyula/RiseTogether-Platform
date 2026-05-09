@@ -5,6 +5,8 @@
   padding: 0 10px;
   background-color: #FF6D00;
   color: white;
+  min-height: 52px;
+  height: 56px;
 }
 .logo-group {
   display: flex;
@@ -13,14 +15,14 @@
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 52px;
+  height: 52px;
   object-fit: contain;
   color: white;
 }
 
 .logo-title {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -28,12 +30,11 @@
 
 .nav-buttons .btn {
   margin-left: 25px;
-  padding: 8px 16px;
+  padding: 5px 15px 5px 15px;
   text-decoration: none;
   color: white;
   background-color: #135ba3;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 10px;
   corner-block-end-shape:13px; 
 
 }
