@@ -184,14 +184,32 @@ const HomePage = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="mission-section section">
-        <h2 className="section-title" style={{color:'#fff'}}>Our Mission</h2>
-        <div>To create an inclusive ecosystem where every individual in Sri Lanka, regardless of their location, has the opportunity to rise by contributing their unique skills to the collective growth of their community.</div>
-        <div style={{display:'flex',gap:32,marginTop:24}}>
-          <div>Inclusion<br/><span style={{fontWeight:400}}>No one left behind.</span></div>
-          <div>Equity<br/><span style={{fontWeight:400}}>Fair share for all.</span></div>
+      <section className="mission-section ">
+        <div className="mission-card"> 
+          <h2 className="sections-title" >Our Mission</h2>
+          <div className="top1">
+            <p>To create an inclusive ecosystem where every individual in Sri Lanka, regardless of their location, has the opportunity to rise by contributing their unique skills to the collective growth of their community.
+              <br/>
+              <div className="values">
+                <h6>Inclusion</h6>
+                <h6>Equity</h6>
+             </div>
+            </p>
+             
+
+             <div className="card1">
+               <div className="mission-quote">“The strength of the collective is only as vibrant<br/> as the inclusion of every unique star.”<br/>
+                 <div className="founder">
+                   <img src="/img8.jpg" alt="Digital Literacy" />
+                   <p>Founder <br/>Rise Together Initiative</p>
+                 </div>
+               </div>
+             </div>
+
+             
+          </div>
+          
         </div>
-        <div className="mission-quote">“The strength of the collective is only as vibrant as the inclusion of every unique star.”<br/><span style={{fontWeight:600}}>— Founder</span></div>
       </section>
 
       {/* Contact Section */}
