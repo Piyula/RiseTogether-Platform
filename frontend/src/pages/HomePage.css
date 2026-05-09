@@ -7,14 +7,12 @@ body {
   text-align: center;
   margin-bottom: 60px;
   padding: 140px 20px 100px 20px;
-  border-radius: 0 0 50px 50px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
   min-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9)), url('../../public/logo.png') center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9)), url('../../public/photo.jpeg') center/cover no-repeat;
 }
 
 .dashboard-header h3 {
@@ -90,36 +88,58 @@ body {
 .section-title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #FF6D00;
+  color: black;
+  margin-bottom: 32px;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.section-titles {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: black;
   margin-bottom: 32px;
   text-align: left;
   line-height: 1.2;
   letter-spacing: -1px;
 }
 .section-subtitle {
-  color: #FF6D00;
+  color: black;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 10px;
   display: inline-block;
+  background-color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
+
+.sub-titles {
+  color: black;
+  text-align: center;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+  gap: 100px;
   margin-top: 24px;
+  color:black;
+  text-align: center;
+ 
 }
-.card {
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  padding: 32px 28px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(0,0,0,0.05);
+
+.card-grid .card{
+  background-color: whitesmoke;
+  padding: 20px 50px;
+  width: 80%;
 }
+
+.card-grid h3{
+  color: black;
+}
+
 
 .card:hover {
   transform: translateY(-5px);
@@ -131,6 +151,19 @@ body {
   margin-bottom: 16px;
   font-weight: 700;
   line-height: 1.3;
+}
+
+.cards img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
 }
 .card .icon {
   font-size: 2rem;
@@ -174,7 +207,6 @@ body {
 }
 
 .mission-section div {
- 
   text-align: center;
 }
 

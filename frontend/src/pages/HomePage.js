@@ -21,40 +21,64 @@ const HomePage = () => {
       {/* Story Section */}
       <section className="section">
         <span className="section-subtitle">OUR STORY</span>
-        <h2 className="section-title">Born from the heart of Sri Lanka</h2>
-        <div className="card-grid">
-          <div className="card">
-            <h3>Community Vision</h3>
+        <h2 className="section-titles">Born from the heart of Sri Lanka</h2>        
+        <div className="card-grid">         
+          <div className="born">
             <p>Rise Together began with a single observation: rural communities are rich with hidden potential, but lack the bridges to connect their skills with widespread opportunity.</p>
-          </div>
-          <div className="card">
-            <h3>Shared Growth</h3>
             <p>We build an inclusive network fostering trust and collaboration while enabling digital literacy, financial inclusion, and resilient progress is shared and empowerment is standard.</p>
+          </div>
+         <div className="cards">
+            <img src="/child.png" alt="Community" /> 
           </div>
         </div>
       </section>
 
       {/* Core Values Section */}
       <section className="section">
-        <h2 className="section-title">Our Core Values</h2>
+        <h2 className="section-title">Our Core Values   </h2>
+        <p className="sub-titles">The pillars that sustain our collective growth. </p>
+     
         <div className="card-grid">
-          <div className="card"><h3>Inclusion</h3><p>The pillars that sustain our collective growth. Every unique experience is valued, regardless of location or background.</p></div>
-          <div className="card"><h3>Growth</h3><p>Committing to continuous learning and sustainable economic benefits for the entire community ecosystem.</p></div>
-          <div className="card"><h3>Empower</h3><p>Providing resources, tools & skills to enable individuals to take charge of their own economic future.</p></div>
+          <div className="card"><h3>Inclusion</h3>
+              <img src="/icon (1).png" alt="Inclusion" /> 
+              <p>The pillars that sustain our collective growth. Every unique experience is valued, regardless of location or background.</p>
+          </div>
+          <div className="card">
+            <h3>Growth</h3>
+            <img src="/icon2.png" alt="Growth" /> 
+            <p>Committing to continuous learning and sustainable economic benefits for the entire community ecosystem.</p>
+          </div>
+          <div className="card">
+            <h3>Empower</h3>
+            <img src="/icon1.png" alt="Empower" /> 
+            <p>Providing resources, tools & skills to enable individuals to take charge of their own economic future.</p>
+          </div>
         </div>
       </section>
 
       {/* Leadership Team Section */}
       <section className="section">
-        <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
           <h2 className="section-title">Leadership Team</h2>
-          <a href="#" style={{color:'#FF6D00', fontWeight:600, textDecoration:'none'}}>View All Team &rarr;</a>
-        </div>
+          <p className="sub-titles">The leaders who guide our mission forward.</p>
+           
+       
         <div className="card-grid">
-          <div className="card"><h3>Dr. Malini Silva</h3><p>Executive Director</p></div>
-          <div className="card"><h3>Rohan Jayawardena</h3><p>Head of Community Impact</p></div>
-          <div className="card"><h3>Kavindi Fernando</h3><p>Director of Operations</p></div>
-          <div className="card"><h3>Arjan Perera</h3><p>Lead Network Strategist</p></div>
+          <div className="cards">
+            <img src="/img1.png" alt="Dr. Malini Silva" />
+            <h3>Dr. Malini Silva</h3><p>Executive Director</p>
+          </div>
+          <div className="cards">
+            <img src="/img2.png" alt="Rohan Jayawardena" />
+            <h3>Rohan Jayawardena</h3><p>Head of Community Impact</p>
+          </div>
+          <div className="cards">
+            <img src="/img3.png" alt="Kavindi Fernando" />
+            <h3>Kavindi Fernando</h3><p>Director of Operations</p>
+          </div>
+          <div className="cards">
+            <img src="/img4.jpg" alt="Arjan Perera" />
+            <h3>Arjan Perera</h3><p>Lead Network Strategist</p>
+          </div>
         </div>
       </section>
 
