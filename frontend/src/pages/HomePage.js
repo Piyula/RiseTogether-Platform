@@ -27,7 +27,7 @@ const HomePage = () => {
             <p>Rise Together began with a single observation: rural communities are rich with hidden potential, but lack the bridges to connect their skills with widespread opportunity.</p>
             <p>We build an inclusive network fostering trust and collaboration while enabling digital literacy, financial inclusion, and resilient progress is shared and empowerment is standard.</p>
           </div>
-         <div className="cards">
+         <div className="cardss">
             <img src="/child.png" alt="Community" /> 
           </div>
         </div>
@@ -63,51 +63,100 @@ const HomePage = () => {
            
        
         <div className="card-grid">
-          <div className="cards">
+          <div className="cards">           
             <img src="/img1.png" alt="Dr. Malini Silva" />
-            <h3>Dr. Malini Silva</h3><p>Executive Director</p>
+            <h3>Dr. Malini Silva</h3>
+            <p>Executive Director Leads Rise Together’s vision, strategy, and partnerships to ensure the platform effectively supports underserved communities through jobs, sponsorships, and social care services.
+            </p>
           </div>
-          <div className="cards">
+          <div className="cards">   
             <img src="/img2.png" alt="Rohan Jayawardena" />
-            <h3>Rohan Jayawardena</h3><p>Head of Community Impact</p>
+            <h3>Rohan Jayawardena</h3>
+            <p>Head of Community Impact     Drives community outreach and social programs, ensuring the platform creates meaningful impact for job seekers, orphanages, elder homes, and vulnerable families.</p>
           </div>
-          <div className="cards">
+          <div className="cards">            
             <img src="/img3.png" alt="Kavindi Fernando" />
-            <h3>Kavindi Fernando</h3><p>Director of Operations</p>
+            <h3>Kavindi Fernando</h3>
+            <p>Director of Operations  Oversees daily platform operations, administrative systems, and service efficiency to ensure smooth, secure, and transparent user experiences.</p>
           </div>
-          <div className="cards">
+          <div className="cards">          
             <img src="/img4.jpg" alt="Arjan Perera" />
-            <h3>Arjan Perera</h3><p>Lead Network Strategist</p>
+            <h3>Arjan Perera</h3>
+            <p>Lead Network Strategist  Builds partnerships with employers, NGOs, and sponsors to expand opportunities, strengthen support networks, and grow the platform’s social reach.</p>
+          </div>
+          <div className="cards">          
+            <img src="/img5.jpg" alt="Arjan Perera" />
+            <h3>Nadeesha Wijesinghe</h3>
+            <p>Leads the development and improvement of Rise Together’s digital platform, ensuring innovative solutions, user-friendly features, and secure technology systems that enhance accessibility for all users.</p>
+          </div>
+          <div className="cards">          
+            <img src="/img9.jpg" alt="Arjan Perera" />
+            <h3>ASanjaya De Mel</h3>
+            <p>Builds strong relationships with businesses, NGOs, and social organizations to create new opportunities, secure sponsorships, and expand Rise Together’s mission through sustainable collaborations.</p>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="section">
+      <section className="section features-section">
         <h2 className="section-title">A Dynamic Path to Progress</h2>
-        <div className="card-grid">
-          <div className="card">
-            <h3>Skill-Based Matching</h3>
-            <p>Our intelligent platform identifies local talents and connects them with community projects that need those specific strengths, ensuring nobody is left behind.</p>
-            <div style={{marginTop:8}}>
-              <span className="btn2" style={{fontSize:'0.85rem',padding:'4px 12px',margin:'0 4px 0 0'}}>Agriculture</span>
-              <span className="btn2" style={{fontSize:'0.85rem',padding:'4px 12px',margin:'0 4px'}}>Textiles</span>
-              <span className="btn2" style={{fontSize:'0.85rem',padding:'4px 12px'}}>Tech</span>
+        <p className="sub-titles">We bridge the gap between hidden potential and sustainable opportunity using our unique community ecosystem.</p>
+        <div className="features-grid">
+          {/* Top Row */}
+          <div className="features-row">
+            {/* Skill-Based Matching */}
+            <div className="feature-card skill-matching">
+              <div className="feature-icon">
+                <img src="/skill1.jpg" alt="Skill-Based Matching" />
+              </div>
+              <div>
+                <h3>Skill-Based Matching</h3>
+                <p>Our intelligent platform identifies unique local talents and connects them with community projects that need those specific strengths, ensuring nobody is left behind.</p>
+                <div className="feature-tags">
+                  <span>Agriculture</span>
+                  <span>Textiles</span>
+                  <span>Tech</span>
+                </div>
+              </div>
+            </div>
+            {/* Community Nodes */}
+            <div className="feature-card community-nodes">
+              <div className="feature-icon">
+                <img src="/skill2.jpg" alt="Community Nodes" />
+              </div>
+              <div>
+                <h3>Community Nodes</h3>
+                <p>Physical hubs in rural Sri Lanka where digital skills meet traditional craftsmanship.</p>
+                <div className="feature-number">
+                  <span>12+</span>
+                  <div>ACTIVE DISTRICTS</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="card">
-            <h3>Community Nodes</h3>
-            <p>Physical hubs that instill inclusive values, offer digital education, financial collaboration, and local culture-building.</p>
-            <div style={{marginTop:8, color:'#FF6D00', fontWeight:600}}>12+ Active Districts</div>
-          </div>
-          <div className="card">
-            <h3>Impact Driven</h3>
-            <p>Measuring success not just in numbers, but in the dignity and independence of every individual we reach.</p>
-          </div>
-          <div className="card">
-            <h3>Digital Literacy</h3>
-            <p>Bridging the rural-urban divide by bringing online school tools to the doorsteps of those who need them most.</p>
-            <a href="#" style={{color:'#FF6D00',fontWeight:600,fontSize:'0.95rem'}}>Learn more &rarr;</a>
+          {/* Bottom Row */}
+          <div className="features-row">
+            {/* Impact Driven */}
+            <div className="feature-card impact-driven">
+              <div className="feature-icon">
+                <img src="/skill3.png" alt="Impact Driven" />
+              </div>
+              <div>
+                <h3>Impact Driven</h3>
+                <p>Measuring success not just in numbers, but in the dignity and independence of every individual we reach.</p>
+              </div>
+            </div>
+            {/* Digital Literacy */}
+            <div className="feature-card digital-literacy">
+              <div className="feature-illustration">
+                <img src="/skill4.jpg" alt="Digital Literacy" />
+              </div>
+              <div>
+                <h3>Digital Literacy</h3>
+                <p>Bridging the rural-urban divide by bringing essential digital tools to the doorsteps of those who need them most.</p>
+                <a href="#" className="learn-more-link">Learn more &rarr;</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
