@@ -45,19 +45,38 @@ function Login() {
 
   return (
     <div className="form-container">
-      <h2>Login</h2>
+      <div className="top">
+          <img src="/logo2.png" alt="Logo" className="img" />
+          <h1>Welcome Back</h1>
+          <p>Login to continue our collective journey</p>
+      </div>
       <form onSubmit={handleSubmit}>
-        <input placeholder="Email"
-          onChange={e=>setForm({...form,email:e.target.value})}/>
+        <div className="form1">
+           <label name="email">Email Address</label>
+           <input placeholder=" Name@gmail.com"
+             onChange={e=>setForm({...form,email:e.target.value})}/>
 
-        <input placeholder="Password" type="password"
-          onChange={e=>setForm({...form,password:e.target.value})}/>
+           <label name="password">Password</label>
+           <input placeholder="Password" type="password"
+             onChange={e=>setForm({...form,password:e.target.value})}/>
+             {error && <p className="login-error">{error}</p>}
 
-        {error && <p style={{ color: "#c62828", margin: "8px 0" }}>{error}</p>}
 
-        <button>Login</button>
+
+          <div className="checkbox-container">
+            <input type="checkbox" id="remember" className="checkbox" />
+            <label htmlFor="remember" className="checkbox-label">Keep me logged in</label>
+          </div>
+          <p className="forgot-password"> Forgot Password? <a href="/forgot-password">Click here</a> </p>
+          </div>
+
+            <button className="buttonss">signin</button>
+        
       </form>
+
+      <p>Dont have an account? <a href="/register">Sign up</a></p>
     </div>
+    
   );
 }
 
