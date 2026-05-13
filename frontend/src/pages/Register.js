@@ -84,11 +84,11 @@ function Register() {
       <div className="social-signup-card">
         <span className="social-title">OR SIGN UP WITH</span>
         <div className="social-btn-row">
-          <button type="buttonsss" className="social-btn google-btn">
+          <button type="button" className="social-btn google-btn">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" className="social-icon" />
             Google
           </button>
-          <button type="buttonsss" className="social-btn facebook-btn">
+          <button type="button" className="social-btn facebook-btn">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" className="social-icon" />
             Facebook
           </button>

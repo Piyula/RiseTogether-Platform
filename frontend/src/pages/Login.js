@@ -62,13 +62,14 @@ function Login() {
              {error && <p className="login-error">{error}</p>}
 
 
-
+          
           <div className="checkbox-container">
             <input type="checkbox" id="remember" className="checkbox" />
             <label htmlFor="remember" className="checkbox-label">Keep me logged in</label>
           </div>
+         
           <p className="forgot-password"> Forgot Password? <a href="/forgot-password">Click here</a> </p>
-          </div>
+      </div>
 
             <button className="buttonss">signin</button>
         
