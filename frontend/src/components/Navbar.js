@@ -10,14 +10,14 @@ function Navbar() {
         <h1 className="logo-title">RiseTogether</h1>
       </div>
       <div className="short-text">
-        <Link to="/Home" className="text">Home</Link>
-        <Link to="/Impact" className="text">Impact</Link>
-        <Link to="/Stories" className="text">Stories</Link>
-        <Link to="/Contact" className="text">Contact</Link>
+        <a href="#home" className="text">Home</a>
+        <a href="#impact" className="text">Impact</a>
+        <a href="#stories" className="text">Stories</a>
+        <a href="#contact" className="text">Contact</a>
       </div>
       <div className="nav-buttons">
-        <Link to="/register" className="btn">Sign Up</Link>
-        <Link to="/login" className="btn">Login</Link>
+        <a href="/register" className="btn">Sign Up</a>
+        <a href="/login" className="btn">Login</a>
       </div>
     </nav>
   );
