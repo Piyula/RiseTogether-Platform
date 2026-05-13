@@ -71,7 +71,7 @@ function Login() {
           <p className="forgot-password"> Forgot Password? <a href="/forgot-password">Click here</a> </p>
       </div>
 
-            <button className="buttonss">signin</button>
+            <button className="buttonss">sign in</button>
         
       </form>
 
