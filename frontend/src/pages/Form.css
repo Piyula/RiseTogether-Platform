@@ -85,7 +85,7 @@
   font-size: 2.1rem;
   font-weight: 700;
   margin-bottom: 8px;
-  color: #1e90ff;
+  color: #c62828;
 }
 
 .form-container p {
@@ -107,7 +107,7 @@
 }
 
 .form-container input:focus {
-  border: 1.5px solid #1e90ff;
+  border: 1.5px solid #c62828;
   outline: none;
   background: #fff;
   box-shadow: 0 0 0 2px rgba(30,144,255,0.08);
@@ -141,7 +141,7 @@
 }
 
 .form-container button:hover {
-  background: linear-gradient(90deg, #104e8b 60%, #1e90ff 100%);
+  background: linear-gradient(90deg, #c62828 60%, #b94646 100%);
   box-shadow: 0 4px 16px rgba(30,144,255,0.13);
 }
 
@@ -185,7 +185,16 @@
   background-color: #c62828;
 }
 
+/* Fix checkbox + label alignment to the left */
 .checkbox-container {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   text-align: left;
+  width: auto;
+  margin-top: 0;
+  margin-bottom: 12px;
+  gap: 6px;
 }
+

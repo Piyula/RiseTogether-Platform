@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <>
       {/* Hero Section */}
-      <header className="dashboard-header">
+      <header className="dashboard-header" id="home">
         <h3>EMPOWERING COMMUNITIES</h3>
         <h1>
           <span className="rise">Rise Together,</span>
@@ -13,14 +13,14 @@ const HomePage = () => {
         </h1>
         <p>Unlocking collective potential through skill sharing and community-driven programs in the heart of Sri Lanka.</p>
         <div>
-          <button className="btn">Join the Movement</button>
+           <a href="/register" className="btn">Join the Movement</a>
           <button className="btn2">How it Works</button>
         </div>
       </header>
 
       {/* Story Section */}
-      <section className="section">
-        <span className="section-subtitle">OUR STORY</span>
+      <section className="section" >
+        
         <h2 className="section-titles">Born from the heart of Sri Lanka</h2>        
         <div className="card-grid">         
           <div className="born">
@@ -34,7 +34,7 @@ const HomePage = () => {
       </section>
 
       {/* Core Values Section */}
-      <section className="section">
+      <section className="section" >
         <h2 className="section-title">Our Core Values   </h2>
         <p className="sub-titles">The pillars that sustain our collective growth. </p>
      
@@ -98,7 +98,7 @@ const HomePage = () => {
       </section>
 
       {/* Features Section */}
-      <section className="section features-section">
+      <section className="section features-section" id="impact">
         <h2 className="section-title">A Dynamic Path to Progress</h2>
         <p className="sub-titles">We bridge the gap between hidden potential and sustainable opportunity using our unique community ecosystem.</p>
         <div className="features-grid">
@@ -162,7 +162,7 @@ const HomePage = () => {
       </section>
 
       {/* Impact Stories Section */}
-      <section className="section impact-stories">
+      <section className="section impact-stories" id="stories">
         <h2 className="section-title">Impact Stories</h2>
         <div className="card-grid">
           <div className="impact-card">
@@ -213,7 +213,7 @@ const HomePage = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="section contact-section">
+      <section className="section contact-section" id="contact">
         <div className="contact-info">
           <span className="section-subtitle" style={{background:'#d6dae4', color:'black',}}>CONNECT WITH US</span>
           <h2 className="section-title" style={{fontSize:'1.5rem'}}>Let's build the future together</h2>
